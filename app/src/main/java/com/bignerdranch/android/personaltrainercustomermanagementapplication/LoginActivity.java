@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private UserLoginTask mAuthTask = null;
 
     // UI references.
-    private AutoCompleteTextView mEmailView;
+    private EditText mUsernameView;
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
@@ -67,10 +67,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         // Set up the login form.
-        mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
+        mUsernameView = findViewById(R.id.username_form);
         populateAutoComplete();
 
-        mPasswordView = (EditText) findViewById(R.id.password);
+        mPasswordView = (EditText) findViewById(R.id.password_form);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
@@ -82,7 +82,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
-        Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
+        Button mEmailSignInButton = (Button) findViewById(R.id.login_button);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,8 +90,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
-        mLoginFormView = findViewById(R.id.login_form);
-        mProgressView = findViewById(R.id.login_progress);
+        //mLoginFormView = findViewById(R.id.login_form);
+        //mProgressView = findViewById(R.id.login_progress);
     }
 
     private void populateAutoComplete() {
@@ -103,24 +103,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     }
 
     private boolean mayRequestContacts() {
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
-            return true;
-        }
-        if (checkSelfPermission(READ_CONTACTS) == PackageManager.PERMISSION_GRANTED) {
-            return true;
-        }
-        if (shouldShowRequestPermissionRationale(READ_CONTACTS)) {
-            Snackbar.make(mEmailView, R.string.permission_rationale, Snackbar.LENGTH_INDEFINITE)
-                    .setAction(android.R.string.ok, new View.OnClickListener() {
-                        @Override
-                        @TargetApi(Build.VERSION_CODES.M)
-                        public void onClick(View v) {
-                            requestPermissions(new String[]{READ_CONTACTS}, REQUEST_READ_CONTACTS);
-                        }
-                    });
-        } else {
-            requestPermissions(new String[]{READ_CONTACTS}, REQUEST_READ_CONTACTS);
-        }
+
         return false;
     }
 
@@ -149,11 +132,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         }
 
         // Reset errors.
-        mEmailView.setError(null);
+        mUsernameView.setError(null);
         mPasswordView.setError(null);
 
         // Store values at the time of the login attempt.
-        String email = mEmailView.getText().toString();
+        String email = mUsernameView.getText().toString();
         String password = mPasswordView.getText().toString();
 
         boolean cancel = false;
@@ -168,12 +151,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         // Check for a valid email address.
         if (TextUtils.isEmpty(email)) {
-            mEmailView.setError(getString(R.string.error_field_required));
-            focusView = mEmailView;
+            focusView = mUsernameView;
             cancel = true;
         } else if (!isEmailValid(email)) {
-            mEmailView.setError(getString(R.string.error_invalid_email));
-            focusView = mEmailView;
+            mUsernameView.setError(getString(R.string.error_invalid_email));
+            focusView = mUsernameView;
             cancel = true;
         }
 
@@ -276,7 +258,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 new ArrayAdapter<>(LoginActivity.this,
                         android.R.layout.simple_dropdown_item_1line, emailAddressCollection);
 
-        mEmailView.setAdapter(adapter);
+       // mUsernameView.setAdapter(adapter);
     }
 
 

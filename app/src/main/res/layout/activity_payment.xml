@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.bignerdranch.android.personaltrainercustomermanagementapplication.username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:layout="@layout/fragment_username" />
+
+    <TextView
+        android:id="@+id/paymentFirst"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="74dp"
+        android:text="@string/prompt_first"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/paymentLast"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/paymentFirst"
+        android:layout_marginEnd="30dp"
+        android:text="@string/prompt_last"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/paymentCard"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="133dp"
+        android:text="@string/prompt_credit"
+        android:textAlignment="center" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="193dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/paymentMonth"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="@string/prompt_month"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/paymentYear"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="@string/prompt_year"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/paymentSecurity"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="@string/prompt_security"
+            android:textAlignment="center" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/paymentAddress1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:text="@string/prompt_address1"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/paymentAddress2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/paymentAddress1"
+        android:text="@string/prompt_address2"
+        android:textAlignment="center" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="136dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/paymentCity"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="@string/prompt_city"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/paymentState"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="@string/prompt_state"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/paymentZip"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="@string/prompt_zipcode"
+            android:textAlignment="center" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/paymentConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/action_payment"
+        android:textAlignment="center" />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewSession">
+
+    <fragment
+        android:id="@+id/newSessionFragment"
+        android:name="com.bignerdranch.android.personaltrainercustomermanagementapplication.username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:layout="@layout/fragment_username" />
+
+    <EditText
+        android:id="@+id/sessionDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="237dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/prompt_description" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sessionDescription">
+
+        <EditText
+            android:id="@+id/sessionDate"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/date" />
+
+        <EditText
+            android:id="@+id/sessionTime"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/time" />
+
+        <Button
+            android:id="@+id/sessionNew"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/action_session" />
+    </TableRow>
+</RelativeLayout>

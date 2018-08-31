@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sessions">
+
+    <fragment
+        android:id="@+id/sessionsFragment"
+        android:name="com.bignerdranch.android.personaltrainercustomermanagementapplication.username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:layout="@layout/fragment_username" />
+
+    <Button
+        android:id="@+id/sessionNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/action_create_session" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_below="@+id/sessionNew"
+        android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/session_description1"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="@string/session_description"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:id="@+id/session_complete1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/session_complete" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/session_description2"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="@string/session_description"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:id="@+id/session_complete2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/session_complete" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/session_description3"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="@string/session_description"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:id="@+id/session_complete3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/session_complete" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/session_description4"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="@string/session_description"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:id="@+id/session_complete4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/session_complete" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginStart="0dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/sessionSignature"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/session_signature" />
+
+        <Button
+            android:id="@+id/sessionConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/session_confirm" />
+    </TableRow>
+
+</RelativeLayout>
