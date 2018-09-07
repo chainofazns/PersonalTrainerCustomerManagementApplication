@@ -68,6 +68,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="175dp"
+        android:onClick="loginButton"
         android:text="@string/action_sign_in_short" />
 
 </RelativeLayout>

@@ -76,6 +76,7 @@
                 android:id="@+id/takePicture"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:onClick="takePictureButton"
                 android:text="@string/action_picture" />
 
             <EditText
@@ -193,6 +194,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="18dp"
+        android:onClick="createCustomerButton"
         android:text="@string/action_create" />
 
 </RelativeLayout>

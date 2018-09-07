@@ -18,6 +18,7 @@
         android:id="@+id/newCustomer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="newCustomerButton"
         android:text="@string/new_customer" />
 
     <TableLayout
@@ -29,11 +30,12 @@
             android:layout_height="match_parent"
             android:gravity="center_horizontal" >
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/customerPhoto1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/ic_launcher_round" />
+                android:onClick="customerSession"
+                app:srcCompat="@mipmap/ic_launcher" />
 
             <TextView
                 android:id="@+id/customerName1"
@@ -55,11 +57,12 @@
             android:layout_height="match_parent"
             android:gravity="center_horizontal" >
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/customerPhoto2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/ic_launcher_round" />
+                android:onClick="customerSession"
+                app:srcCompat="@mipmap/ic_launcher" />
 
             <TextView
                 android:id="@+id/customerName2"
@@ -81,11 +84,12 @@
             android:layout_height="match_parent"
             android:gravity="center_horizontal" >
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/customerPhoto3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/ic_launcher_round" />
+                android:onClick="customerSession"
+                app:srcCompat="@mipmap/ic_launcher" />
 
             <TextView
                 android:id="@+id/customerName3"
@@ -107,11 +111,12 @@
             android:layout_height="match_parent"
             android:gravity="center_horizontal" >
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/customerPhoto4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/ic_launcher_round" />
+                android:onClick="customerSession"
+                app:srcCompat="@mipmap/ic_launcher" />
 
             <TextView
                 android:id="@+id/customerName4"

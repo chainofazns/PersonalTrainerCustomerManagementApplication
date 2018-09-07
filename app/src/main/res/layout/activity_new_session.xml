@@ -52,6 +52,7 @@
             android:id="@+id/sessionNew"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:onClick="createSessionButton"
             android:text="@string/action_session" />
     </TableRow>
 </RelativeLayout>

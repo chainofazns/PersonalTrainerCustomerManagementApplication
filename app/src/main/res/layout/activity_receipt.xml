@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Reciept">
+    tools:context=".Receipt">
 
     <fragment
         android:id="@+id/receiptFragment"
@@ -22,6 +22,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="168dp"
+        android:onClick="returnButton"
         android:text="@string/action_return" />
 
     <Button
@@ -30,6 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
+        android:onClick="emailButton"
         android:text="@string/action_email" />
 
     <Button
@@ -38,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_toStartOf="@+id/receiptEmail"
+        android:onClick="printButton"
         android:text="@string/action_print" />
 
     <EditText

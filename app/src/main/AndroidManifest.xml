@@ -29,9 +29,9 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".NewCustomer" />
         <activity android:name=".Payment" />
-        <activity android:name=".Reciept" />
+        <activity android:name=".Receipt" />
         <activity android:name=".NewSession" />
-        <activity android:name=".Sessions"></activity>
+        <activity android:name=".Sessions" />
     </application>
 
 </manifest>
