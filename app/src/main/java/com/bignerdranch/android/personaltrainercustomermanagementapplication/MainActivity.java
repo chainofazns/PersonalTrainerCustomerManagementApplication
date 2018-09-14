@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
         Cursor cursor =  mDatabase.getCustomer();
 
-        if (cursor != null ){
+        if (cursor != null && cursor.getCount() > 0){
             cursor.moveToFirst();
             cust1Name = findViewById(R.id.customerName1);
             cust1Progress = findViewById(R.id.customerProgress1);
