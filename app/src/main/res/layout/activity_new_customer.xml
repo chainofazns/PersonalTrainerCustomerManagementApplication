@@ -19,7 +19,7 @@
         android:id="@+id/tableLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editText8"
+        android:layout_above="@+id/custCard"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="-222dp">
 
@@ -45,24 +45,24 @@
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="@string/prompt_first" />
+                    android:hint="@string/prompt_first"
+                    android:inputType="textPersonName" />
 
                 <EditText
                     android:id="@+id/custLast"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="@string/prompt_last" />
+                    android:hint="@string/prompt_last"
+                    android:inputType="textPersonName" />
 
                 <EditText
                     android:id="@+id/custDOB"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="@string/prompt_dateofbirth" />
+                    android:hint="@string/prompt_dateofbirth"
+                    android:inputType="textPersonName" />
             </LinearLayout>
 
         </TableRow>
@@ -84,27 +84,27 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="number"
-                android:text="@string/prompt_sessions" />
+                android:hint="@string/prompt_sessions"
+                android:inputType="number" />
         </TableRow>
 
     </TableLayout>
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/custCard"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="222dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/prompt_credit" />
+        android:hint="@string/prompt_credit"
+        android:inputType="text" />
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_above="@+id/editText12"
+        android:layout_above="@+id/custAddress1"
         android:layout_alignParentStart="true"
         android:gravity="center_horizontal">
 
@@ -113,35 +113,35 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/prompt_month" />
+            android:hint="@string/prompt_month"
+            android:inputType="number" />
 
         <EditText
             android:id="@+id/custCardYear"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/prompt_year" />
+            android:hint="@string/prompt_year"
+            android:inputType="number" />
 
         <EditText
             android:id="@+id/custSecurity"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/prompt_security" />
+            android:hint="@string/prompt_security"
+            android:inputType="number" />
     </TableRow>
 
     <EditText
-        android:id="@+id/editText12"
+        android:id="@+id/custAddress1"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/custAddress2"
         android:layout_centerHorizontal="true"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/prompt_address1" />
+        android:hint="@string/prompt_address1"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/custAddress2"
@@ -151,8 +151,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="151dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/prompt_address2" />
+        android:hint="@string/prompt_address2"
+        android:inputType="textPersonName" />
 
     <TableRow
         android:layout_width="match_parent"
@@ -167,24 +167,24 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/prompt_city" />
+            android:hint="@string/prompt_city"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/custState"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/prompt_state" />
+            android:hint="@string/prompt_state"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/custZip"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/prompt_zipcode" />
+            android:hint="@string/prompt_zipcode"
+            android:inputType="number" />
     </TableRow>
 
     <Button

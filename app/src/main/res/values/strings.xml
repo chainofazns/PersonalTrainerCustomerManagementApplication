@@ -17,8 +17,8 @@
     <string name="new_customer">New Customer</string>
 
     <!-- Main Menu -->
-    <string name="customer_name">temp name</string>
-    <string name="customer_progress">number / number</string>
+    <string name="customer_name">New Customer</string>
+    <string name="customer_progress">Progress</string>
 
     <!--New Customer-->
     <string name="picture_customer">Customer\'s Picture</string>
