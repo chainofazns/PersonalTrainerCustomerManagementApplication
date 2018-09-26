@@ -72,12 +72,12 @@
             android:layout_height="match_parent"
             android:gravity="center_horizontal">
 
-            <Button
-                android:id="@+id/takePicture"
-                android:layout_width="150dp"
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="takePictureButton"
-                android:text="@string/action_picture" />
+                app:srcCompat="@android:drawable/ic_menu_camera" />
 
             <EditText
                 android:id="@+id/custSessions"
